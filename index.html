@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-title" content="玖玖组合">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="shortcut icon" href="https://zmqdq.net/wp-content/uploads/2024/11/icon_s.png">
+    <meta name='robots' content='max-image-preview:large' />
+    <title>玖玖组合</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container clearfix">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" title="玖玖组合" class="logo-text">玖</a>
+            </div>
+            
+            <!-- 导航菜单 -->
+            <ul class="nav-main">
+                <li class="current-menu-item"><a href="index.html" aria-current="page">首页</a></li>
+                <li><a href="#">最新发布</a></li>
+                <li><a href="#">分类1</a></li>
+                <li><a href="#">分类2</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">推广合作</a></li>
+            </ul>
+            
+            <!-- 右侧功能区 -->
+            <ul class="nav-right">
+                <li class="nav-vip">
+                    <a href="#"><i class="fas fa-crown"></i></a>
+                </li>
+                <li class="nav-search">
+                    <a href="javascript:;" class="search-loader" title="搜索"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-login no"><a href="user.html" class="signin-loader" rel="nofollow"><i class="fas fa-user"></i><span>登录</span></a><b class="nav-line"></b><a href="user.html" class="reg signup-loader" rel="nofollow"><span>注册</span></a></li>
+                <li class="nav-button"><a href="javascript:;" class="nav-loader"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 搜索框 -->
+    <div class="search-wrap">
+        <div class="container search-wrap-container">
+            <form action="#" class="search-form" method="get">
+                <div class="search-cat">所有分类</div>      
+                <input autocomplete="off" class="search-input" name="s" placeholder="输入关键字回车" type="text">
+                <button class="search-btn" type="submit"><i class="fas fa-search"></i>搜索</button>
+                <i class="fas fa-times"></i>
+                <input type="hidden" name="cat" class="search-cat-val">
+                <div class="search-cats">
+                    <ul>
+                        <li data-id="" class="active">所有分类</li>
+                        <li data-id="1">分类1</li>
+                        <li data-id="2">分类2</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 主要内容区 -->
+    <div class="main">
+        <div class="container">
+            <!-- 标签筛选区 -->
+            <div class="filter-tabs">
+                <ul>
+                    <li class="active" data-tab="all">全部</li>
+                    <li data-tab="tab1">标签1</li>
+                    <li data-tab="tab2">标签2</li>
+                    <li data-tab="tab3">标签3</li>
+                    <li data-tab="tab4">标签4</li>
+                </ul>
+            </div>
+            
+            <!-- 内容列表区 -->
+            <div class="mocat mocat-new" id="mocat-new">
+                <h2><span>最新发布<i>NEW</i></span></h2>
+                <div class="lists cols-three clearfix" id="content-list">
+                    <!-- 内容卡片将通过JS动态生成 -->
+                </div>
+                <!-- 加载更多按钮 -->
+                <div class="more" id="load-more"><a href="javascript:;" target="_blank">查看更多</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget widget_block widget_text">
+                    <p></p>
+                </div>
+                <div class="footer-widget widget-bottom">
+                    <h3>关于我们</h3>
+                    <div class="footer-widget-content">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget widget-bottom">
+                    <h3>使用条款</h3>
+                    <div class="footer-widget-content">
+                        <ul>
+                            <li><a href="#">关于隐私</a></li>
+                            <li><a href="#">免责声明</a></li>
+                            <li><a href="#">使用条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget widget_block widget_text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>访问我们的网站，您确认您已经年满十八（18）岁和/或超过您所居住辖区的成年年龄。</p>
+                <p>站内大部分资源收集于网络，若侵犯了您的合法权益，请联系我们。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 固定底部导航 -->
+    <div class="footer-fixed-nav clearfix">
+        <a href="index.html"><i class="fas fa-home"></i><span>首页</span></a>
+        <a href="#"><i class="fas fa-compass"></i><span>发现</span></a>
+        <a href="#" class="special"><i class="fas fa-crown"></i><span>VIP</span></a>
+        <a href="user.html" class="footer-fixed-nav-user signin-loader"><i class="fas fa-user"></i><span>我的</span></a>
+    </div>
+
+    <!-- 网站提示 -->
+    <div class="sitetips sitetips-default">
+        <i class="fas fa-bullhorn"></i> 重要：<a href="#" target="_blank" rel="noopener">网址发布页</a>，网址发布页可以解决部分地区网络无法访问网站的问题，一定要保存到收藏夹！<a href="javascript:;" class="close"><i class="fas fa-times"></i></a>
+    </div>
+
+    <!-- JavaScript文件 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
